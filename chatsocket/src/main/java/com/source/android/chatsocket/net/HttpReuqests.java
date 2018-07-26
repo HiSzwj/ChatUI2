@@ -1,7 +1,8 @@
 package com.source.android.chatsocket.net;
 
 
-import com.bsc.chat.commenbase.BaseConst;
+
+import com.source.android.chatsocket.commen.BaseConst;
 import com.source.android.chatsocket.entity.CommenResponse;
 import com.source.android.chatsocket.entity.SocketConst;
 

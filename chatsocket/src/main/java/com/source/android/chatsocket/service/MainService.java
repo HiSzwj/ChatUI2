@@ -10,10 +10,10 @@ import android.os.IBinder;
 import android.os.PowerManager;
 import android.util.Log;
 
-import com.bsc.chat.commenbase.BaseConst;
 import com.source.android.chatsocket.MainActivity;
 import com.source.android.chatsocket.R;
 import com.source.android.chatsocket.chatdb.ChatDBManager;
+import com.source.android.chatsocket.commen.BaseConst;
 import com.source.android.chatsocket.entity.DataBean;
 import com.source.android.chatsocket.entity.MsgEntity;
 import com.source.android.chatsocket.entity.RoomEntity;

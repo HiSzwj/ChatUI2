@@ -12,7 +12,6 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.alibaba.fastjson.JSONObject;
-import com.bsc.chat.commenbase.BaseConst;
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.request.RequestOptions;
 import com.source.adnroid.comm.ui.R;
@@ -22,6 +21,7 @@ import com.source.adnroid.comm.ui.entity.MessagePatientEntity;
 import com.source.adnroid.comm.ui.entity.MsgTypeEnum;
 import com.source.adnroid.comm.ui.interfaces.OnItemClickListener;
 
+import com.source.android.chatsocket.commen.BaseConst;
 import com.source.android.chatsocket.entity.MsgViewEntity;
 
 import java.util.ArrayList;

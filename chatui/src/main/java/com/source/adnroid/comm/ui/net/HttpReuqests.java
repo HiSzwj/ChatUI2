@@ -1,7 +1,7 @@
 package com.source.adnroid.comm.ui.net;
 
 
-import com.bsc.chat.commenbase.BaseConst;
+import com.source.android.chatsocket.commen.BaseConst;
 import com.source.adnroid.comm.ui.entity.AddMemberHospital;
 import com.source.adnroid.comm.ui.entity.AddMemberProvince;
 import com.source.adnroid.comm.ui.entity.ChatGroupAttributes;

@@ -10,7 +10,7 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.bsc.chat.commenbase.BaseConst;
+import com.source.android.chatsocket.commen.BaseConst;
 import com.bumptech.glide.Glide;
 import com.source.adnroid.comm.ui.R;
 import com.source.adnroid.comm.ui.entity.AddMemberInfo;

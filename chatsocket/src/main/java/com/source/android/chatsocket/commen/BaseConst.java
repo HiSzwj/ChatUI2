@@ -1,4 +1,4 @@
-package com.bsc.chat.commenbase;
+package com.source.android.chatsocket.commen;
 
 public class BaseConst {
     public static String CHAT_DEAULT_BASE = "http://222.247.54.203:1081";

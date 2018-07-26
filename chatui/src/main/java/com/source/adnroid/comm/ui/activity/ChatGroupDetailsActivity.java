@@ -19,7 +19,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.aspsine.swipetoloadlayout.SwipeToLoadLayout;
-import com.bsc.chat.commenbase.BaseConst;
+
 import com.bumptech.glide.Glide;
 import com.source.adnroid.comm.ui.R;
 import com.source.adnroid.comm.ui.adapter.AnnListAdapter;
@@ -33,6 +33,7 @@ import com.source.adnroid.comm.ui.entity.CommenResponse;
 import com.source.adnroid.comm.ui.entity.Const;
 import com.source.adnroid.comm.ui.interfaces.OnItemClickListener;
 import com.source.adnroid.comm.ui.net.HttpReuqests;
+import com.source.android.chatsocket.commen.BaseConst;
 import com.source.android.chatsocket.entity.SocketConst;
 import com.source.android.chatsocket.messages.AddMemberEvent;
 import com.source.android.chatsocket.messages.ChatGroupPeopleChangeCallBackMessage;

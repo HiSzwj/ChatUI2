@@ -50,5 +50,4 @@ dependencies {
     //JSON转化
     implementation 'com.alibaba:fastjson:1.1.56.android'
     implementation 'com.google.code.gson:gson:2.8.0'
-    implementation project(':CommenBase')
 }

@@ -1,1 +1,1 @@
-include ':app','CommenBase','chatsocket','chatui'
+include ':app','chatsocket','chatui'

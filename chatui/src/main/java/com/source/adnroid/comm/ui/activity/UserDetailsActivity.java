@@ -9,7 +9,7 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.bsc.chat.commenbase.BaseConst;
+import com.source.android.chatsocket.commen.BaseConst;
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.request.RequestOptions;
 import com.source.adnroid.comm.ui.R;
