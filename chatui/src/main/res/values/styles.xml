@@ -1,0 +1,66 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="chat_name_content_style">
+        <item name="android:layout_marginLeft">5dp</item>
+        <item name="android:layout_marginTop">5dp</item>
+    </style>
+    <style name="chat_image_size">
+        <item name="android:layout_width">50dp</item>
+        <item name="android:layout_height">50dp</item>
+    </style>
+
+    <declare-styleable name="BounceProgressBar">
+        <!-- the single child size -->
+        <attr name="singleSrcSize" format="dimension" />
+        <!-- the bounce animation one-way duration -->
+        <attr name="speed" format="integer" />
+        <!-- the child count -->
+        <!-- <attr name="count" format="integer" min="1" /> -->
+        <!-- the progress child shape -->
+        <attr name="shape" format="enum">
+            <enum name="original" value="0" />
+            <enum name="circle" value="1" />
+            <enum name="pentagon" value="2" />
+            <enum name="rhombus" value="3" />
+            <enum name="heart" value="4" />
+        </attr>
+        <!-- the progress drawable resource -->
+        <attr name="src" format="reference|color"></attr>
+    </declare-styleable>
+
+    <declare-styleable name="CircularProgressView">
+        <attr name="borderWidth" format="dimension" />
+        <attr name="colorSequence" format="reference" />
+        <attr name="sweepAnimationDurationMillis" format="integer" />
+        <attr name="angleAnimationDurationMillis" format="integer" />
+        <attr name="minSweepAngle" format="integer" />
+    </declare-styleable>
+
+
+    <dimen name="circular_default_border_width">4dp</dimen>
+
+    <array name="circular_default_color_sequence">
+        <item>@color/circular_red</item>
+        <item>@color/circular_blue</item>
+        <item>@color/circular_yellow</item>
+        <item>@color/circular_green</item>
+    </array>
+
+    <integer name="circular_default_sweepAnimationDuration">900</integer>
+    <integer name="circular_default_angleAnimationDurationMillis">2000</integer>
+    <integer name="circular_default_miniSweepAngle">30</integer>
+
+    <color name="circular_red">#F90101</color>
+    <color name="circular_blue">#0266C8</color>
+    <color name="circular_yellow">#F2B50F</color>
+    <color name="circular_green">#00933B</color>
+    <color name="delete_red">#ea4343</color>
+
+</resources>

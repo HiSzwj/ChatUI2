@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/group_content"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+    <TextView
+        android:id="@+id/group_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:text=""
+        android:textColor="@color/chat_black"
+        android:textSize="@dimen/chat_text_size" />
+
+    <LinearLayout
+        style="@style/chat_name_content_style"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/group_owner"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="群主"
+            android:textColor="@color/chat_tv_title"
+            android:textSize="@dimen/chat_12sp" />
+
+        <TextView
+            android:id="@+id/group_owner_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/chat_tv_text"
+            android:textSize="@dimen/chat_12sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/chat_name_content_style"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/group_user"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="成员"
+            android:textColor="@color/chat_tv_title"
+            android:textSize="@dimen/chat_12sp" />
+
+        <TextView
+            android:id="@+id/group_user_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/chat_tv_text"
+            android:textSize="@dimen/chat_12sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/chat_name_content_style"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/now_news"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="最新公告"
+            android:textColor="@color/chat_tv_title"
+            android:textSize="@dimen/chat_12sp" />
+
+        <TextView
+            android:id="@+id/now_news_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text=""
+            android:textColor="@color/chat_tv_text"
+            android:textSize="@dimen/chat_12sp" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        style="@style/chat_name_content_style"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/now_say"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="最新发言"
+            android:textColor="@color/chat_tv_title"
+            android:textSize="@dimen/chat_12sp" />
+
+        <ImageView
+            android:id="@+id/patient_img"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="5dp"
+            android:background="@color/blue"
+            android:padding="1dp"
+            android:src="@mipmap/chat_share"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/now_say_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text=""
+            android:textColor="@color/chat_tv_text"
+            android:textSize="@dimen/chat_12sp" />
+    </LinearLayout>
+
+</LinearLayout>

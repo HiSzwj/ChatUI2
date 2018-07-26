@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="gray">#FFE7DBD8</color>
+    <color name="blue">#FF3C92BA</color>
+    <color name="chat_tv_title">#676767</color>
+    <color name="chat_tv_text">#959595</color>
+    <color name="chat_edit">#fff</color>
+    <color name="chat_background">#f1f1f1</color>
+    <color name="chat_tools">#f4f4f6</color>
+    <color name="chat_red">#d22411</color>
+    <color name="chat_change_gray">#cac5c5</color>
+    <color name="chat_white">#fffefd</color>
+    <color name="chat_red1">#fc6c5d</color>
+    <color name="chat_yello">#efe59b</color>
+    <color name="chat_black">#00030d</color>
+    <color name="chat_bt">#50b8df</color>
+
+
+</resources>

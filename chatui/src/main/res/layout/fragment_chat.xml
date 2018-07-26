@@ -1,0 +1,132 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/chat_background">
+
+    <TextView
+        android:id="@+id/chat_net_statue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:text="网络连接断开"
+        android:textColor="@color/chat_red"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/chat_net_reconnect"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/chat_net_statue"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:text="点击重连"
+        android:textColor="@color/chat_red"
+        android:visibility="gone" />
+
+    <com.aspsine.swipetoloadlayout.SwipeToLoadLayout
+        android:id="@+id/swipeToLoadLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/component_content"
+        android:layout_below="@+id/chat_net_reconnect">
+
+        <com.aspsine.swipetoloadlayout.SwipeRefreshHeaderLayout
+            android:id="@id/swipe_refresh_header"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:gravity="center" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/swipe_target"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></android.support.v7.widget.RecyclerView>
+
+        <com.aspsine.swipetoloadlayout.SwipeLoadMoreFooterLayout
+            android:id="@id/swipe_load_more_footer"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:gravity="center" />
+    </com.aspsine.swipetoloadlayout.SwipeToLoadLayout>
+
+    <TextView
+        android:id="@+id/msg_not_read"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/component_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="2dp"
+        android:layout_marginRight="20dp"
+        android:text="" />
+
+    <LinearLayout
+        android:id="@+id/component_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/component_button_content"
+            android:layout_centerVertical="true"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <EditText
+                android:id="@+id/chatEdit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/chat_edit__layer"
+                android:maxHeight="100dp"
+                android:padding="5dp" />
+
+            <TextView
+                android:id="@+id/component_button_show"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:drawableLeft="@mipmap/chat_add"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/chat_sendMsg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="发送" />
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray" />
+        <LinearLayout
+            android:id="@+id/component_button_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/chat_image_bt"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="图片" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

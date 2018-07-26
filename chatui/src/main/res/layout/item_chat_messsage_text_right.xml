@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:id="@+id/chat_to_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/chat_delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableBottom="@mipmap/chat_send_failed"
+                android:text=""
+                android:visibility="invisible"
+                android:textColor="@color/chat_red" />
+            <com.source.adnroid.comm.ui.chatview.CircularProgressView
+                android:id="@+id/chat_msg_status"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                app:angleAnimationDurationMillis="@integer/circular_default_angleAnimationDurationMillis"
+                app:borderWidth="@dimen/circular_default_border_width"
+                app:colorSequence="@array/circular_default_color_sequence"
+                app:sweepAnimationDurationMillis="@integer/circular_default_sweepAnimationDuration"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginRight="10dp"
+            android:gravity="right"
+            android:layout_weight="1"
+            >
+            <TextView
+                android:id="@+id/chat_to_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="name"
+                android:textSize="10sp"
+                android:layout_gravity="right"
+                />
+            <TextView
+                android:id="@+id/chat_to_msg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="1111"
+                android:background="@drawable/chatto_bg_normal"
+                />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/to_img"
+            style="@style/chat_image_size"
+            android:src="@mipmap/ic_launcher_round"
+            />
+    </LinearLayout>
+
+</RelativeLayout>

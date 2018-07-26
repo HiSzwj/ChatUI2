@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:bpb="http://schemas.android.com/apk/res-auto"
+    tools:context="com.source.adnroid.comm.ui.activity.CreateNewGroupActivity">
+    <com.source.adnroid.comm.ui.chatview.LoadingView
+        android:id="@+id/mload"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerInParent="true"
+        android:visibility="invisible"
+        bpb:shape="circle"
+        bpb:singleSrcSize="20dp"
+        bpb:speed="250"
+        bpb:src="#6495ED" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary">
+
+            <ImageView
+                android:id="@+id/chat_back_image"
+                android:layout_width="24dp"
+                android:layout_height="21dp"
+                android:layout_alignParentLeft="true"
+                android:layout_gravity="left"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:onClick="onBackClick"
+                android:src="@drawable/chat_basic_back" />
+
+            <TextView
+                android:id="@+id/chat_title_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="创建讨论群"
+                android:textColor="#ffffff"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="30dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="群分类"
+                android:textColor="@color/chat_tv_title"
+                android:textSize="@dimen/chat_title_size" />
+
+            <Spinner
+                android:id="@+id/chat_group_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="1"></Spinner>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="群名称"
+                android:textColor="@color/chat_tv_title"
+                android:textSize="@dimen/chat_title_size" />
+
+            <EditText
+                android:id="@+id/chat_group_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/chat_tv_shape"
+
+                android:padding="5dp"
+                android:textColor="@color/chat_tv_text"
+                android:textSize="@dimen/chat_text_size"></EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="群简介"
+                android:textColor="@color/chat_tv_title"
+                android:textSize="@dimen/chat_title_size" />
+
+            <EditText
+                android:id="@+id/chat_group_description"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/chat_tv_shape"
+                android:gravity="top|left"
+
+                android:padding="5dp"
+                android:textColor="@color/chat_tv_text"
+                android:textSize="@dimen/chat_text_size"></EditText>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/chat_group_save"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/chat_button_shape"
+            android:onClick="ChatCreatGroupSave"
+            android:textColor="@color/chat_white"
+            android:textSize="@dimen/chat_text_size"
+            android:text="@string/chat_save" />
+    </LinearLayout>
+</RelativeLayout>

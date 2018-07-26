@@ -1,0 +1,63 @@
+//apply plugin: 'com.android.application'
+apply plugin: 'com.android.library'
+android {
+    compileSdkVersion 26
+    defaultConfig {
+        // applicationId "com.source.android.androidcomm"
+        minSdkVersion 16
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+        flavorDimensions "versionCode"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    allprojects {
+        repositories {
+            maven { url 'https://jitpack.io' }
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'com.android.support:appcompat-v7:26.1.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+    implementation 'com.android.support:support-v4:26.1.0'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.1'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
+    implementation 'com.android.support:recyclerview-v7:26.1.0'
+    implementation 'com.github.Aspsine:SwipeToLoadLayout:1.0.4'
+    implementation 'com.github.bumptech.glide:glide:4.3.1'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.3.1'
+    //retrofit
+    //RxAndroid
+    implementation 'io.reactivex.rxjava2:rxandroid:2.0.1'
+    //RxJava2
+    implementation 'io.reactivex.rxjava2:rxjava:2.0.7'
+    //Retrofit2的RxJava适配
+    implementation 'com.squareup.retrofit2:adapter-rxjava2:2.2.0'
+    //Retrofit2
+    implementation 'com.squareup.retrofit2:retrofit:2.2.0'
+    //RxJava2Gson适配
+    implementation 'com.squareup.retrofit2:converter-gson:2.2.0'
+    //网络日志拦截
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.6.0'
+    //JSON转化
+    implementation 'com.alibaba:fastjson:1.1.56.android'
+    implementation 'com.google.code.gson:gson:2.8.0'
+    //消息总线
+    implementation 'org.greenrobot:eventbus:3.0.0'
+    implementation project(':chatsocket')
+    //数据库调试
+    //debugImplementation 'com.amitshekhar.android:debug-db:1.0.3 '
+    //debugImplementation 'com.amitshekhar.android:debug-db:1.0.0'
+    implementation project(':CommenBase')
+}

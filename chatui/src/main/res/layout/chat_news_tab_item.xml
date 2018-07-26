@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:gravity="center">
+
+    <com.source.adnroid.comm.ui.chatview.MarqueTextView
+        android:id="@+id/chatTabTextView"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:ellipsize="marquee"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:scrollHorizontally="true"
+        android:singleLine="true"
+        android:textSize="12sp" />
+
+    <View
+        android:id="@+id/chatTabSelectedView"
+        android:layout_width="100dp"
+        android:layout_height="2dp"
+        android:layout_below="@id/chatTabTextView"
+        android:layout_weight="1"
+        android:background="#599cff"
+        android:visibility="invisible" />
+</RelativeLayout>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:bpb="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ebebeb"
+    android:gravity="center_horizontal"
+
+    tools:context="com.source.adnroid.comm.ui.activity.ChatGroupDetailsActivity">
+
+    <com.source.adnroid.comm.ui.chatview.LoadingView
+        android:id="@+id/mload"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerInParent="true"
+        bpb:shape="circle"
+        bpb:singleSrcSize="20dp"
+        bpb:speed="250"
+        bpb:src="#6495ED" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary">
+
+            <ImageView
+                android:id="@+id/BackImageView"
+                android:layout_width="24dp"
+                android:layout_height="21dp"
+                android:layout_alignParentLeft="true"
+                android:layout_gravity="left"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/chat_basic_back" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="添加成员"
+                android:textColor="#ffffff"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <Spinner
+            android:id="@+id/ProvinceSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:spinnerMode="dropdown" />
+
+        <Spinner
+            android:id="@+id/SiteSpinner"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="30dp"
+            android:layout_marginTop="10dp"
+            android:spinnerMode="dropdown" />
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <com.aspsine.swipetoloadlayout.SwipeToLoadLayout
+                android:id="@+id/add_member_Layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/swipe_target"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                </android.support.v7.widget.RecyclerView>
+
+            </com.aspsine.swipetoloadlayout.SwipeToLoadLayout>
+
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>
+

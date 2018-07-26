@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    >
+   <TextView
+       android:id="@+id/chat_member_change"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:background="@drawable/chat_member_shape"
+       android:gravity="center_horizontal"
+       android:layout_centerHorizontal="true"
+       android:text="人员变动"
+       android:textSize="@dimen/chat_text_size"
+       android:textColor="@color/chat_white"
+        android:paddingLeft="10dp"
+       android:paddingRight="10dp"
+       android:paddingBottom="2dp"
+       android:paddingTop="2dp"
+       />
+
+</RelativeLayout>

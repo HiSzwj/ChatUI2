@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/memberLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/chat_basic_border_bottom"
+    android:paddingBottom="5dp">
+
+
+    <ImageView
+        android:id="@+id/UserHeadImageView"
+        android:layout_width="52dp"
+        android:layout_height="73dp"
+        android:layout_marginBottom="6dp"
+        android:layout_marginLeft="17dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="6dp"
+        android:background="#ededed"
+        android:src="@drawable/chat_basic_image_user" />
+
+    <ImageView
+        android:layout_width="53dp"
+        android:layout_height="73dp"
+        android:layout_alignLeft="@id/UserHeadImageView"
+        android:layout_alignTop="@id/UserHeadImageView"
+        android:src="@drawable/chat_basic_image_user_border" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/UserHeadImageView">
+
+        <TextView
+            android:id="@+id/NameTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text=""
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/PhoneTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/NameTextView"
+            android:gravity="left|center_vertical"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/HospitalTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/PhoneTextView"
+            android:gravity="left|center_vertical"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/DelTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/del_item_shape"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="移除"
+            android:textColor="@color/chat_white"
+            android:textSize="15sp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/ManagerTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@+id/DelTextView"
+            android:background="@drawable/manager_item_shape"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="设置管理"
+            android:textSize="15sp"
+            android:visibility="gone" />
+    </RelativeLayout>
+</RelativeLayout>
